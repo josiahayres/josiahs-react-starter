@@ -1,2 +1,0 @@
-# josiahs-react-starter
-
