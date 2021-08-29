@@ -18,7 +18,6 @@
         "build": "vite build",
         "serve": "vite preview",
         "test": "cypress run",
-        "eject": "react-scripts eject",
         "styleguide": "styleguidist server",
         "prepare": "husky install",
         "test:cy": "cypress open",
