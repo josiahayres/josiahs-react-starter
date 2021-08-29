@@ -1,5 +1,10 @@
 Each component should have documentation.
 
 ```jsx
-<Button>Click me</Button>
+const [counter, setCounter] = React.useState(0)
+const handleClick = (event) => {
+    setCounter((counter) => counter++)
+}
+
+;<Button onClick={() => handleClick}>{`Click me ${counter}}`</Button>
 ```

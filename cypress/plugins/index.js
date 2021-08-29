@@ -11,6 +11,8 @@
 
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
+const path = require('path')
+const { startDevServer } = require('@cypress/vite-dev-server')
 
 /**
  * @type {Cypress.PluginConfig}
@@ -19,9 +21,14 @@
 module.exports = (on, config) => {
     // `on` is used to hook into various events Cypress emits
     // `config` is the resolved Cypress config
-    if (config.testingType === 'component') {
-        require('@cypress/react/plugins/react-scripts')(on, config)
-    }
+    on('dev-server:start', (options) => {
+        return startDevServer({
+            options,
+            viteConfig: {
+                configFile: path.resolve(__dirname, '../../vite.config.js'),
+            },
+        })
+    })
 
     return config
 }
