@@ -1,12 +1,12 @@
 import React from 'react'
 
 // material-ui
-import Skeleton from '@material-ui/core/Skeleton'
+import Skeleton from '@mui/material/Skeleton'
 
 // ===========================|| SKELETON IMAGE CARD ||=========================== //
 
 const ImagePlaceholder = ({ ...others }) => (
-    <Skeleton variant="rect" {...others} animation="wave" />
+    <Skeleton variant="rectangular" {...others} animation="wave" />
 )
 
 export default ImagePlaceholder

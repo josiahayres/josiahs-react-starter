@@ -1,7 +1,7 @@
 import React from 'react'
 
 // material-ui
-import { makeStyles } from '@material-ui/styles'
+import { makeStyles } from '@mui/styles'
 import {
     Card,
     CardContent,
@@ -10,7 +10,7 @@ import {
     ListItemAvatar,
     ListItemText,
     Skeleton,
-} from '@material-ui/core'
+} from '@mui/material'
 
 // style constant
 const useStyles = makeStyles({

@@ -1,7 +1,7 @@
 import React from 'react'
 
 // material-ui
-import { makeStyles } from '@material-ui/styles'
+import { makeStyles } from '@mui/styles'
 import {
     Button,
     Card,
@@ -9,7 +9,7 @@ import {
     Grid,
     Stack,
     Typography,
-} from '@material-ui/core'
+} from '@mui/material'
 
 // project imports
 import AnimateButton from 'ui-component/extended/AnimateButton'

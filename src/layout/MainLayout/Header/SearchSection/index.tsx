@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 // material-ui
-import { makeStyles } from '@material-ui/styles'
+import { makeStyles } from '@mui/styles'
 import {
     Avatar,
     Box,
@@ -12,7 +12,7 @@ import {
     InputAdornment,
     OutlinedInput,
     Popper,
-} from '@material-ui/core'
+} from '@mui/material'
 
 // third-party
 import PopupState, { bindPopper, bindToggle } from 'material-ui-popup-state'

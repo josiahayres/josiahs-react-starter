@@ -3,21 +3,21 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 
 // material-ui
-import { makeStyles } from '@material-ui/styles'
+import { makeStyles } from '@mui/styles'
 import {
     Collapse,
     List,
     ListItemIcon,
     ListItemText,
     Typography,
-} from '@material-ui/core'
-import ListItemButton from '@material-ui/core/ListItemButton'
+    ListItemButton,
+} from '@mui/material'
 
 // project imports
 import NavItem from '../NavItem'
 
 // assets
-import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord'
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord'
 import { IconChevronDown, IconChevronUp } from '@tabler/icons'
 
 // style constant
